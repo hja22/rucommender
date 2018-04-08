@@ -1,0 +1,9 @@
+[package]
+name = "rucfuu"
+version = "0.0.1"
+authors = ["Henry A <hja22@hja22.co.uk>"]
+
+[dependencies]
+csv = "1.0.0-beta.3"
+serde = "1"
+serde_derive = "1"
