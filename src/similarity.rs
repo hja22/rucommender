@@ -6,12 +6,12 @@ use std::collections::HashSet;
 use std::error::Error;
 use std::io;
 
-type UserId = u32;
-type ItemId = u32;
-type Similarity = f64;
+pub type UserId = u32;
+pub type ItemId = u32;
+pub type Similarity = f64;
 
-type UserItemsMap = HashMap<UserId, HashSet<ItemId>>;
-type ItemUsersMap = HashMap<ItemId, HashSet<UserId>>;
+pub type UserItemsMap = HashMap<UserId, HashSet<ItemId>>;
+pub type ItemUsersMap = HashMap<ItemId, HashSet<UserId>>;
 pub type Similarities = HashMap<UserId, HashMap<UserId, Similarity>>;
 
 #[derive(Debug, Deserialize)]
