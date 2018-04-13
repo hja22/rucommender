@@ -34,14 +34,18 @@ Rust and Cargo
     ```
 
 #### Outputs
+Depends on command used:
 
-* Currently just similarities
-* Eventually also recommendations
+* user->user similarity maps
+* user->(item, score) recommendation maps
 
 #### Examples
 
 To spit out some similarities for a set of activities to make sure everything is working:
-`cargo run < examples/dummy/activity.csv`
+`cargo run --bin similarities < examples/dummy/activity.csv`
+
+To spit out some recommendations for a set of activities to make sure everything is working:
+`cargo run --bin recommendations < examples/dummy/activity.csv`
 
 #### Tests
 
