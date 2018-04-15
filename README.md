@@ -51,6 +51,14 @@ To spit out some recommendations for a set of activities to make sure everything
 
 ## Getting involved
 
+### Community
+
+[Ruccommender has a mailing list](https://groups.google.com/forum/#!forum/rucommender/new). Feel free to join it and ask any questions you may have.
+
+### Contributing
+
+Contributions welcome.
+How?
 Err.
-Fork and clone and PR?
+Fork and PR?
 I don't know I've not done much of this before.
