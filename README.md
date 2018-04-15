@@ -40,10 +40,10 @@ Depends on command used:
 #### Examples
 
 To spit out some similarities for a set of activities to make sure everything is working:
-`cargo run --bin similarities < examples/dummy/activity.csv`
+`cargo run --bin similarities < tests/fixtures/dummy/activity.csv`
 
 To spit out some recommendations for a set of activities to make sure everything is working:
-`cargo run --bin recommendations < examples/dummy/activity.csv`
+`cargo run --bin recommendations < tests/fixtures/dummy/activity.csv`
 
 #### Tests
 

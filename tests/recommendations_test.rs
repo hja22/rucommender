@@ -5,7 +5,7 @@ use std::fs::File;
 
 #[test]
 fn it_computes_recommendations_for_dummy_example() {
-    let file = File::open("examples/dummy/activity.csv").unwrap();
+    let file = File::open("tests/fixtures/dummy/activity.csv").unwrap();
     let actual = rucommender::recommendations(file).unwrap();
     let mut expected = HashMap::<u32, HashMap<u32, f64>>::new();
     let empty_recs = HashMap::<u32, f64>::new();
