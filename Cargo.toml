@@ -1,7 +1,10 @@
 [package]
-name = "rucommender"
-version = "0.0.1"
 authors = ["Henry A <hja22@hja22.co.uk>"]
+license = "MIT"
+name = "rucommender"
+readme = "README.md"
+repository = "https://github.com/henryaddison/rucommender"
+version = "0.0.1"
 
 [dependencies]
 csv = "1.0.0-beta.3"
