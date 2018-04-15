@@ -1,9 +1,9 @@
-extern crate rucfuu;
+extern crate rucommender;
 
 use std::error::Error;
 use std::process;
 
-use rucfuu::similarities;
+use rucommender::similarities;
 
 fn main() {
     let sims = match similarities(std::io::stdin()) {

@@ -1,9 +1,9 @@
-extern crate rucfuu;
+extern crate rucommender;
 
 use std::error::Error;
 use std::process;
 
-use rucfuu::recommendations;
+use rucommender::recommendations;
 
 fn main() {
     let recs = match recommendations(std::io::stdin()) {

@@ -1,4 +1,4 @@
-extern crate rucfuu;
+extern crate rucommender;
 
 use std::collections::HashMap;
 use std::fs::File;
@@ -6,7 +6,7 @@ use std::fs::File;
 #[test]
 fn it_computes_similarities_for_dummy_example() {
     let file = File::open("examples/dummy/activity.csv").unwrap();
-    let actual = rucfuu::similarities(file).unwrap();
+    let actual = rucommender::similarities(file).unwrap();
     let mut expected = HashMap::<u32, HashMap<u32, f64>>::new();
     let empty_sims = HashMap::<u32, f64>::new();
     
