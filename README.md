@@ -1,7 +1,5 @@
-# RUCFUU
-**RU**st **C**ollaborative **F**iltering **U**ser-**U**ser
-
-Yeah, probably want a better name.
+# Rucommender
+Recommendation system written in Rust
 
 ## Overview
 
