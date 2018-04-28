@@ -10,12 +10,12 @@ use similarity::{compute_similarities, Similarities, UserItemsMap, ItemUsersMap}
 
 use recommendations::{compute_recommendations, RecommendationMap};
 
-fn extract_data<R: std::io::Read>(activity_source: R) -> Result<(UserItemsMap, ItemUsersMap), Box<Error>> {
-    similarity::read_csv(activity_source)
+fn extract_data<R: std::io::Read>(ratings_source: R) -> Result<(UserItemsMap, ItemUsersMap), Box<Error>> {
+    similarity::read_csv(ratings_source)
 }
 
-pub fn similarities<R: std::io::Read>(activity_source: R) -> Result<Similarities, Box<Error>> {
-    let (user_items, item_users) = match extract_data(activity_source) {
+pub fn similarities<R: std::io::Read>(ratings_source: R) -> Result<Similarities, Box<Error>> {
+    let (user_items, item_users) = match extract_data(ratings_source) {
         Ok((user_items, item_users)) => { (user_items, item_users) },
         Err(err) => return Err(err)
     };
@@ -23,9 +23,9 @@ pub fn similarities<R: std::io::Read>(activity_source: R) -> Result<Similarities
     compute_similarities(&user_items, &item_users)
 }
 
-pub fn recommendations<R: std::io::Read>(activity_source: R) -> Result<RecommendationMap, Box<Error>> {
+pub fn recommendations<R: std::io::Read>(ratings_source: R) -> Result<RecommendationMap, Box<Error>> {
 
-    let (user_items, item_users) = match extract_data(activity_source) {
+    let (user_items, item_users) = match extract_data(ratings_source) {
         Ok((user_items, item_users)) => { (user_items, item_users) },
         Err(err) => return Err(err)
     };

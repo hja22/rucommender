@@ -20,8 +20,8 @@ struct Record {
     item_id: ItemId
 }
 
-pub fn read_csv<R: io::Read>(activity_source: R) -> Result<(UserItemsMap, ItemUsersMap), Box<Error>> {
-    let mut rdr = csv::Reader::from_reader(activity_source);
+pub fn read_csv<R: io::Read>(ratings_source: R) -> Result<(UserItemsMap, ItemUsersMap), Box<Error>> {
+    let mut rdr = csv::Reader::from_reader(ratings_source);
     let mut user_items = UserItemsMap::new();
     let mut item_users = ItemUsersMap::new();
 

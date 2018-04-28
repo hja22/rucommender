@@ -3,7 +3,7 @@ Recommendation system written in Rust
 
 ## Overview
 
-An implementation in Rust of a collaborative filtering recommendations algorithm with a user-user similarity based on interactions with the same items.
+An implementation in Rust of a collaborative filtering recommendations algorithm with a user-user similarity based on implicit ratings on the same items (e.g. both users clicked on the same item).
 
 **STATUS:** This is project I'm using to learn some Rust and to reinforce my knowledge of recommender systems.
 
@@ -22,7 +22,7 @@ Rust and Cargo
 
 #### Inputs
 
-1. CSV linking users to items, e.g.
+1. CSV of implicit ratings by users on items, e.g.
     ```csv
     user_id,item_id
     1,100
@@ -40,10 +40,10 @@ Depends on command used:
 #### Examples
 
 To spit out some similarities for a set of activities to make sure everything is working:
-`cargo run --bin similarities < tests/fixtures/dummy/activity.csv`
+`cargo run --bin similarities < tests/fixtures/dummy/implicit-ratings.csv`
 
 To spit out some recommendations for a set of activities to make sure everything is working:
-`cargo run --bin recommendations < tests/fixtures/dummy/activity.csv`
+`cargo run --bin recommendations < tests/fixtures/dummy/implicit-ratings.csv`
 
 #### Tests
 
