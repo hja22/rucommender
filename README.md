@@ -59,6 +59,4 @@ To spit out some recommendations for a set of activities to make sure everything
 
 Contributions welcome.
 How?
-Err.
-Fork and PR?
-I don't know I've not done much of this before.
+Fork and PR, I guess.
